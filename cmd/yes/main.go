@@ -13,12 +13,14 @@ const (
 )
 
 func usage() {
-	fmt.Println(`Usage: yes [STRING]...  
-  or: yes OPTION
+	fmt.Printf(`Usage: %s [STRING]...  
+  or: %s OPTION
 Repeatedly output a line with all specified STRING(s), or 'y'.
 
+OPTIONS:
 	--help		display this help and exit
-	--version	output version information and exit`)
+	--version	output version information and exit
+`, programName, programName)
 }
 
 func main() {

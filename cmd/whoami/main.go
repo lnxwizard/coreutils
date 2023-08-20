@@ -14,12 +14,20 @@ const (
 )
 
 func usage() {
-	fmt.Printf("Usage: %s [OPTION]...\n", programName)
+	/*fmt.Printf("Usage: %s [OPTION]...\n", programName)
 	fmt.Println("Print the user name associated with the current effective user ID.")
-	fmt.Println(`OPTIONS: 
+	fmt.Println(`OPTIONS:
 	--help 		display this help and exit
 	--version 	output version information and exit
-	`)
+	`)*/
+
+	fmt.Printf(`Usage: %s [OPTION]...
+Print the user name associated with the current effective user ID.
+	
+OPTIONS:
+	--help 		display this help and exit
+	--version 	output version information and exit
+`, programName)
 }
 
 func main() {
